@@ -11,7 +11,7 @@ export default function Header() {
     <header className="header">
       <div className="header-container">
         <div className="logo">
-          <Link to="/">MERN<span>Shop</span></Link>
+          <Link to="/">MERNCAFE</Link>
         </div>
         <nav className="nav">
           <Link to="/">Home</Link>

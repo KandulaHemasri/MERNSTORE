@@ -32,17 +32,17 @@
   font-size: 18px;
 }
 .cart-empty button {
-  background-color: #6366f1;
-  color: white;
+  background-color: #334155;
+  color: #334155;
   padding: 10px 24px;
   border: none;
   border-radius: 8px;
   cursor: pointer;
   transition: background 0.2s ease;
 }
-.cart-empty button:hover {
-  background-color: #4f46e5;
-}
+/* .cart-empty button:hover {
+  background-color: #334155;
+} */
 
 /* Each item */
 .cart-list {

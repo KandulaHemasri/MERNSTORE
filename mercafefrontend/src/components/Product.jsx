@@ -4,7 +4,7 @@ import { AppContext } from "../App";
 import "./Product.css"; // 👈 Add this line
 
 export default function Product() {
-  const API_URL = 'https://merncafebackend-2.onrender.com';
+  const API_URL = 'https://mernstore-peach.vercel.app/';
   const [products, setProducts] = useState([]);
   const [error, setError] = useState();
   const { user, cart, setCart } = useContext(AppContext);
