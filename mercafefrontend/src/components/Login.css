@@ -1,104 +1,65 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: 'Inter', sans-serif;
+/* Login.css */
+.login-container {
+  max-width: 400px;
+  margin: 80px auto;
+  padding: 30px;
+  background-color: #f8f9fa;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-body, html {
-  height: 100%;
-  overflow: hidden;
-}
-
-.login-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  background: linear-gradient(-45deg, #0ea5e9, #9333ea, #14b8a6, #3b82f6);
-  background-size: 400% 400%;
-  animation: gradientMove 15s ease infinite;
-}
-
-@keyframes gradientMove {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
-
-.login-glass {
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 20px;
-  box-shadow: 0 8px 32px rgba(0,0,0,0.2);
-  backdrop-filter: blur(10px);
-  padding: 40px 30px;
-  width: 350px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  color: #fff;
+.login-container h2 {
   text-align: center;
+  margin-bottom: 20px;
+  color: #343a40;
 }
 
-.login-glass h2 {
-  font-size: 26px;
-  font-weight: 600;
-}
-
-.login-sub {
-  font-size: 14px;
-  color: #cbd5e1;
-}
-
-.login-glass input {
+.login-container input[type="text"],
+.login-container input[type="password"] {
+  width: 100%;
   padding: 12px;
-  border: none;
-  border-radius: 10px;
-  background-color: rgba(255, 255, 255, 0.2);
-  color: #fff;
+  margin-top: 8px;
+  margin-bottom: 16px;
+  border: 1px solid #ced4da;
+  border-radius: 8px;
   font-size: 14px;
-  outline: none;
-  transition: 0.3s;
 }
 
-.login-glass input::placeholder {
-  color: #e2e8f0;
-}
-
-.login-glass input:focus {
-  background-color: rgba(255, 255, 255, 0.3);
-  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.4);
-}
-
-.login-glass button {
+.login-container button {
+  width: 100%;
   padding: 12px;
-  background-color: #fff;
-  color: #0ea5e9;
-  font-weight: 600;
+  background-color: black;
   border: none;
-  border-radius: 10px;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
   cursor: pointer;
-  transition: 0.3s;
+  transition: background 0.3s;
 }
 
-.login-glass button:hover {
-  background-color: #f1f5f9;
+.login-container button:hover {
+  background-color: black;
 }
 
-.link-text {
-  font-size: 13px;
-  color: #e2e8f0;
+.login-container hr {
+  margin: 20px 0;
 }
 
-.link-text a {
-  color: #fff;
-  font-weight: 600;
+.login-container a {
+  display: block;
+  text-align: center;
+  color: #38bdf8;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.login-container a:hover {
   text-decoration: underline;
 }
 
-.error-msg {
-  color: #f87171;
-  font-size: 14px;
+.error-message {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #dc3545;
 }

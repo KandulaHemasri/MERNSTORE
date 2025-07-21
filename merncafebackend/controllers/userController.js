@@ -75,6 +75,7 @@ const login = async (req, res) => {
     res.status(500).json({ message: "Something went wrong" });
   }
 };
+
 const register = async (req, res) => {
   try {
     const { firstName, lastName, email, password } = req.body;
