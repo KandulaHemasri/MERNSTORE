@@ -8,7 +8,7 @@ export default function Login() {
   const { user, setUser } = useContext(AppContext);
   const [error, setError] = useState();
   const navigate = useNavigate();
-  const API_URL = 'https://merncafebackend-2.onrender.com';
+  const API_URL = 'https://mernstore-peach.vercel.app/';
 
   const handleSubmit = async () => {
     try {
