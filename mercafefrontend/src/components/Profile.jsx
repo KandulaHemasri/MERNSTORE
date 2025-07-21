@@ -9,7 +9,7 @@ export default function Profile() {
   const { user, setUser } = useContext(AppContext);
   const [form, setForm] = useState({});
   const [error, setError] = useState();
-  const API_URL = 'https://mernstore-peach.vercel.app/';
+  const API_URL = 'https://mernstore-peach.vercel.app';
   const Navigate = useNavigate();
 
   const fetchProfile = async () => {

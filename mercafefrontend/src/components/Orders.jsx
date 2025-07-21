@@ -11,7 +11,7 @@ export default function Orders() {
   const [totalPages, setTotalPages] = useState(1);
   const [status, setStatus] = useState("");
   const { user } = useContext(AppContext);
-  const API_URL = 'https://mernstore-peach.vercel.app/';
+  const API_URL = 'https://mernstore-peach.vercel.app';
 
   const fetchOrders = async () => {
     try {

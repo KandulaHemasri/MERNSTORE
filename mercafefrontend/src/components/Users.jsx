@@ -21,7 +21,7 @@ export default function Users() {
   const [totalPages, setTotalPages] = useState(1);
   const [limit, setLimit] = useState(2);
   const [editId, setEditId] = useState();
-  const API_URL = 'https://mernstore-peach.vercel.app/';
+  const API_URL = 'https://mernstore-peach.vercel.app';
 
   const fetchUsers = async () => {
     try {

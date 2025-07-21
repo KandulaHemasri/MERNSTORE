@@ -9,7 +9,7 @@ export default function Cart() {
   const [orderValue, setOrderValue] = useState(0);
   const [error, setError] = useState(null);
   const navigate = useNavigate();
-  const API_URL = 'https://mernstore-peach.vercel.app/';
+  const API_URL = 'https://mernstore-peach.vercel.app';
 
   useEffect(() => {
     const total = cart.reduce((acc, item) => acc + item.qty * item.price, 0);

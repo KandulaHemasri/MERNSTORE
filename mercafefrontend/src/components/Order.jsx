@@ -4,7 +4,7 @@ import { AppContext } from "../App";
 import "./Order.css";
 
 export default function Order() {
-  const API_URL = 'https://mernstore-peach.vercel.app/';
+  const API_URL = 'https://mernstore-peach.vercel.app';
   const { user } = useContext(AppContext);
   const [error, setError] = useState();
   const [orders, setOrders] = useState([]);
